@@ -3,4 +3,4 @@ python:
   - "3.6"
 
 script:
-  - nosetests
+  - python3.6 -m pytest .
