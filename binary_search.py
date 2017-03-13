@@ -9,19 +9,17 @@ def binary_search(list, target):
 
     while left_element <= right_element:
 
-        middle_element = math.floor((left_element + right_element) // 2)
+        middle_element = (left_element + right_element) // 2
 
         if list[middle_element] == target:
-            print('Found')
             return True
 
         elif list[middle_element] > target:
             right_element = middle_element - 1
 
-        elif list[middle_element] < target:
+        else:
             left_element = middle_element + 1
 
-    print('Not found')
     return False
 
 class MyTest(unittest.TestCase):
