@@ -1,6 +1,4 @@
 
-import math
-
 def binary_search(list, target):
 
     left_element = 0
@@ -20,4 +18,3 @@ def binary_search(list, target):
             left_element = middle_element + 1
 
     return False
-
