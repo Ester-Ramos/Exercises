@@ -1,23 +1,23 @@
-def recursive_binary(list, target):
+def recursive_binary(array, target):
 
-    size = len(list)
+    size = len(array)
     if size == 0:
         return False
 
     middle_position = (size-1)//2
 
-    middle_element = list[middle_position]
+    middle_element = array[middle_position]
 
     if middle_element == target:
         return True
 
-    elif len(list) == 1:
+    elif size == 1:
         return False
 
     elif middle_element < target:
-        list = list[middle_position+1:]
-        return recursive_binary(list, target)
+        array = array[middle_position+1:]
+        return recursive_binary(array, target)
 
     else:
-        list = list[:middle_position]
-        return recursive_binary(list, target)
+        array = array[:middle_position]
+        return recursive_binary(array, target)
