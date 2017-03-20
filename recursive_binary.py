@@ -13,9 +13,7 @@ def recursive_binary(array, target):
         return False
 
     elif middle_element < target:
-        array = array[middle_position+1:]
-        return recursive_binary(array, target)
+        return recursive_binary(array[middle_position+1:], target)
 
     else:
-        array = array[:middle_position]
-        return recursive_binary(array, target)
+        return recursive_binary(array[:middle_position], target)
