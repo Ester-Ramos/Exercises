@@ -1,8 +1,6 @@
 def recursive_binary(array, target):
 
     size = len(array)
-    if size == 0:
-        return False
 
     middle_position = (size-1)//2
 
@@ -11,7 +9,7 @@ def recursive_binary(array, target):
     if middle_element == target:
         return True
 
-    elif size == 1:
+    elif size <= 1:
         return False
 
     elif middle_element < target:
