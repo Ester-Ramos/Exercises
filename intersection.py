@@ -8,8 +8,9 @@ def intersection(x, y):
     y = set(y)
     inter = []
     for num in x:
-        if num in y:
-            inter.append(num)
+        if num not in y:
+            continue
+        inter.append(num)
     return inter
 
 def intersection_fast(x, y):
