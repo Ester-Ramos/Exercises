@@ -1,5 +1,6 @@
 import unittest
 from binary_search import binary_search
+from recursive_binary import recursive_binary
 
 class MyTest(unittest.TestCase):
     def test(self):
@@ -15,4 +16,3 @@ class MyTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
